@@ -54,13 +54,13 @@ export default class Wall {
         this.mesh = new THREE.Mesh(this.geometry, this.material)
 
         if (this.wallType == "back"){
-            this.mesh.position.y = -3
+            this.mesh.position.y = -3.25
             this.mesh.position.z = -10
         }
 
         else if (this.wallType == "left"){
             this.mesh.position.x = -10
-            this.mesh.position.y = -3
+            this.mesh.position.y = -3.25
             this.mesh.rotation.y = Math.PI * 0.5
             this.mesh.rotation.x = Math.PI
         }
